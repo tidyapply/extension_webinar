@@ -1,0 +1,111 @@
+This folder contains Version 1 of Command Tab, the Manifest V3 New Tab extension we already built.
+
+Read the existing files first.
+
+Do not start over.
+Do not revert the existing layout.
+Preserve existing functionality unless this prompt explicitly changes it.
+
+Version 1 intentionally used in memory state.
+
+For Version 2, add section editing and persistence with chrome.storage.local.
+
+Stop as soon as the requested Version 2 functionality works. Do not take screenshots. Do not iterate on visual polish. Do not generate image files.
+
+Update the extension version in manifest.json from 0.1.0 to 0.2.0.
+
+Do not add:
+
+A service worker
+A toolbar popup
+A page level Save button
+Favicons
+Tasks or todos
+A timer
+Drag and drop
+
+USE MODE
+
+By default:
+
+Section titles are plain text.
+
+Rows show shortcut tiles only. Do not show the + tile.
+
+Clicking a shortcut opens its URL.
+
+Do not show editing controls on shortcut tiles.
+
+EDIT MODE
+
+Edit mode is per section, not global, and does not belong in Settings.
+
+Hover over a section title.
+
+After 300ms, show a pencil button next to that title only.
+
+Click the pencil to enter Edit mode for that section.
+
+The pencil becomes a checkmark.
+
+Only one section can be in Edit mode at a time.
+
+If another section enters Edit mode, save the current section and leave its Edit mode before opening the new one.
+
+Click the checkmark to save the changes and leave Edit mode.
+
+Pressing Escape should also save the changes and leave Edit mode.
+
+WHILE A SECTION IS IN EDIT MODE
+
+Make the section title editable.
+
+Show the + tile at the end of that section only.
+
+Each shortcut should have one horizontal row of four 16px icon only controls underneath its name:
+
+Move left
+Move right
+Edit
+Delete
+
+Do not place these controls over the shortcut icon.
+
+Do not use text labels on these buttons.
+
+Use the same gray outline treatment as the + tile.
+
+Edit should allow the shortcut name and URL to be changed.
+
+Clicking the shortcut itself while its section is in Edit mode must not navigate.
+
+Empty sections must still expose the pencil when their section title is hovered so the user can enter Edit mode and add the first shortcut.
+
+PERSISTENCE
+
+Add chrome.storage.local and the required storage permission.
+
+Persist:
+
+Sections
+Section titles
+Shortcuts
+Shortcut order
+Settings
+
+Existing Version 1 default data should initialize the extension when no saved data exists.
+
+Changes made in Edit mode must remain after opening a new tab or reloading Chrome.
+
+Leave the existing Settings interface and behavior otherwise unchanged.
+
+WHEN FINISHED
+
+List the files you changed.
+
+Give me the reload steps:
+
+Reload the extension card in chrome://extensions.
+Then open a new tab.
+
+Stop after Version 2. Do not add additional features.

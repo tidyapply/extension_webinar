@@ -1,0 +1,100 @@
+Build a Manifest V3 Chrome extension named Command Tab in this folder.
+
+I am attaching a product sketch. Use it as the source of truth for layout and hierarchy. It is a wireframe, not pixels. Preserve its structure and controls, but do not reproduce the hand drawn look.
+
+Stop as soon as the requested Version 1 functionality works. Do not take screenshots. Do not iterate on visual polish. Do not generate image files.
+
+Create only these files:
+
+manifest.json
+newtab.html
+newtab.css
+newtab.js
+
+CONSTRAINTS
+
+Manifest V3
+
+Use chrome_url_overrides.newtab to override the New Tab page with newtab.html.
+
+No icons key in the manifest. Chrome's default icon is fine.
+
+No frameworks, npm, bundler, backend, or authentication.
+
+No background service worker.
+
+No toolbar popup.
+
+No chrome.storage yet.
+
+No TidyApply branding or TidyApply seed tile.
+
+Shortcut tiles use a letter avatar only. Do not fetch favicons.
+
+No Save button.
+
+Set the extension version in manifest.json to 0.1.0.
+
+BUILD
+
+Create the centered clock and date shown in the sketch.
+
+Create the search field. If the input looks like a URL, navigate to it. Otherwise search Google.
+
+Create three sections:
+
+Favorites
+Work
+Messaging
+
+Each section should display a row of shortcut tiles followed by a + tile.
+
+Seed these shortcuts:
+
+Favorites:
+Gmail
+Drive
+Calendar
+
+Work:
+Notion
+
+Messaging:
+Empty
+
+Clicking a shortcut opens its URL.
+
+Clicking + prompts for a shortcut name and URL and adds it to that section for the current session.
+
+The gear opens a Settings side panel based on the sketch.
+
+Include these working settings:
+
+Icon size:
+Small
+Medium
+Large
+
+Section style:
+None
+Card
+Outline
+
+Background:
+A few color choices
+
+Behavior:
+Show clock
+Open links in new tab
+
+Settings should work during the current session but do not need to survive a reload.
+
+Keep the implementation intentionally simple.
+
+WHEN FINISHED
+
+List the four files you created.
+
+Give me the exact Chrome steps to load this folder as an unpacked extension.
+
+Stop after Version 1. Do not begin Version 2.
