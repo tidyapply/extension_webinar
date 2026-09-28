@@ -109,3 +109,5 @@ Reload the extension card in chrome://extensions.
 Then open a new tab.
 
 Stop after Version 2. Do not add additional features.
+
+Product Version 2 is manifest version 0.2.0. Do not treat 0.1.0 as a mistake.
