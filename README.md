@@ -13,7 +13,7 @@ Workshop: DataCamp code-along with Ken Rose — *Create a Chrome Extension with 
 |---|---|
 | [sketch.png](sketch.png) | Download. In Grok Build, attach it with `@sketch.png` |
 | [prompt-1.txt](prompt-1.txt) | Open → copy → paste into Grok Build |
-| [prompt-2.txt](prompt-2.txt) | Same, after Version 0 is loaded |
+| [prompt-2.txt](prompt-2.txt) | Same, after Version 1 is loaded |
 
 You do not need to clone this repository. Copy the prompts. Download the sketch.
 
