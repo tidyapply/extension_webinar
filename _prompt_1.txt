@@ -1,6 +1,6 @@
 Build a Manifest V3 Chrome extension named Command Tab in this folder.
 
-I am attaching a product sketch. Use it as the source of truth for layout and hierarchy. It is a wireframe, not pixels. Preserve its structure and controls, but do not reproduce the hand drawn look.
+I am attaching a product sketch. It is a wireframe, not pixels. Preserve its layout, but do not reproduce the hand drawn look.
 
 Stop as soon as the requested Version 1 functionality works. Do not take screenshots. Do not iterate on visual polish. Do not generate image files.
 
@@ -27,11 +27,10 @@ No toolbar popup.
 
 No chrome.storage yet.
 
-No TidyApply branding or TidyApply seed tile.
+No TidyApply wordmark, logo, or branded header.
+A tile named TidyApply that opens https://tidyapply.app is required.
 
 Shortcut tiles use a letter avatar only. Do not fetch favicons.
-
-No Save button.
 
 Set the extension version in manifest.json to 0.1.0.
 
@@ -52,12 +51,15 @@ Each section should display a row of shortcut tiles followed by a + tile.
 Seed these shortcuts:
 
 Favorites:
-Gmail
-Drive
-Calendar
+Gmail — https://mail.google.com
+Drive — https://drive.google.com
+Photos — https://photos.google.com
+Calendar — https://calendar.google.com
 
 Work:
-Notion
+Notion — https://www.notion.so
+Proton — https://mail.proton.me
+TidyApply — https://tidyapply.app
 
 Messaging:
 Empty
@@ -67,13 +69,14 @@ Clicking a shortcut opens its URL.
 Clicking + prompts for a shortcut name and URL and adds it to that section for the current session.
 
 The gear opens a Settings side panel based on the sketch.
+Gear is the only control in the upper-right corner.
 
 Include these working settings:
 
 Icon size:
-Small
-Medium
-Large
+Small - show as S
+Medium - show as M
+Large - show as L
 
 Section style:
 None
@@ -90,6 +93,12 @@ Open links in new tab
 Settings should work during the current session but do not need to survive a reload.
 
 Keep the implementation intentionally simple.
+
+IGNORE
+The sketch is layout only. This prompt wins.
+Do not build background image, Import, or Reset.
+Do not debug after the four files exist.
+Stop after Version 1. Do not begin Version 2.
 
 WHEN FINISHED
 
