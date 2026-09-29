@@ -1,0 +1,71 @@
+This folder contains Version 2 of Command Tab, the Manifest V3 New Tab extension we already built.
+
+Read the existing files first.
+
+Do not start over.
+Do not revert the existing layout.
+Preserve existing functionality unless this prompt explicitly changes it.
+
+For Version 3, add section create, delete, and reorder. Use the Edit mode that already exists. Do not invent a second edit system.
+
+Stop as soon as the requested Version 3 functionality works. Do not take screenshots. Do not iterate on visual polish. Do not generate image files.
+
+Update the extension version in manifest.json from 0.2.0 to 0.3.0.
+
+Do not add:
+A service worker
+A toolbar popup
+A page level Save button
+Favicons
+Tasks or todos
+A timer
+Drag and drop
+Background image, Import, or Reset
+
+SECTION ACTIONS LIVE IN EDIT MODE
+
+Keep Use mode unchanged: no + tiles, no tile action rows, clicking a shortcut opens its URL.
+
+When a section is in Edit mode (pencil → check):
+
+- The section title stays editable
+- + still adds a shortcut to that section
+- Tile actions stay under the name: move left, move right, edit, delete
+- Add three section controls next to the checkmark, same small icon-only style as the tile actions:
+  - Move section up
+  - Move section down
+  - Delete section
+- Also show an "Add section" control next to those (a + is enough). Clicking it asks for a section name and inserts a new empty section immediately after the section being edited, then leaves Edit on the old section and opens Edit on the new one
+
+DELETE SECTION
+
+- If the board would have zero sections left, do not delete. Keep at least one section.
+- Otherwise remove that section and its shortcuts.
+- A simple confirm is fine. Do not build a custom modal.
+
+MOVE SECTION
+
+- Move up / move down changes the order of sections on the page.
+- Persist the new order.
+- Do not move shortcuts between sections in this version.
+
+CREATE SECTION
+
+- New sections start empty.
+- New sections use the same Edit mode as existing ones (hover title → pencil).
+
+PERSISTENCE
+
+Keep chrome.storage.local.
+Persist sections, section order, section titles, shortcuts, shortcut order, and settings.
+A new tab after reload must keep section create, delete, and reorder.
+
+WHEN FINISHED
+
+List the files you changed.
+
+Give the reload steps:
+Reload the extension card in chrome://extensions.
+Then open a new tab.
+
+Stop after Version 3. Do not add additional features.
