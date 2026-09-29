@@ -14,6 +14,7 @@ Workshop: DataCamp code-along with Ken Rose — *Create a Chrome Extension with 
 | [sketch.png](sketch.png) | Download. In Grok Build, attach it with `@sketch.png` |
 | [prompt-1.txt](prompt-1.txt) | Open → copy → paste into Grok Build |
 | [prompt-2.txt](prompt-2.txt) | Same, after Version 1 is loaded |
+| [prompt-3.txt](prompt-3.txt) | Same, after Version 2 is loaded |
 
 You do not need to clone this repository. Copy the prompts. Download the sketch.
 
@@ -36,6 +37,8 @@ You do not need to clone this repository. Copy the prompts. Download the sketch.
 4. Load the folder in Chrome (steps below).
 5. In the same Grok Build session, paste [prompt-2.txt](prompt-2.txt). Do not start over.
 6. Reload the extension card, then open a new tab.
+7. In the same Grok Build session, paste [prompt-3.txt](prompt-3.txt). Do not start over.
+8. Reload the extension card, then open a new tab.
 
 If Prompt 1 has not produced `manifest.json` after several minutes, stop and follow along on the presenter’s screen. You can rerun both prompts after the call.
 
@@ -60,10 +63,15 @@ If another new-tab extension is still in control, disable it first.
 
 **After Prompt 2:** hover a section title for about 300ms — a pencil appears. Click it. The title is editable, `+` shows in that section only, actions sit under the tile name (not on the icon). Clicking a tile does not navigate until you click the check (or press Escape). Open a new tab: your edits are still there.
 
+**After Prompt 3:** hover a section title for about 300ms — a pencil appears. Click it. Sections can now be added, moved or deleted.
+
 ## What we are not building
 
 Favicons, a focus timer, a to-do list, drag-and-drop across sections, publishing to the Chrome Web Store, or TidyApply.
 
 ## After the session
 
-Keep the two prompts. To change the extension, open Grok Build in the same folder and describe one change. Reload the extension card, then open a new tab.
+Keep the prompts. To change the extension, open Grok Build in the same folder and describe one change. Reload the extension card, then open a new tab.
+
+## Learn about developing Chrome Extensions from Google
+https://developer.chrome.com/docs/extensions/
